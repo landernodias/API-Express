@@ -8,7 +8,7 @@ const sequence = {
 const produtos = {}
 
 function salvarProduto(produto) {
-    if (!produto.id) produto.id = sequence.id // verifica se id esta setado caso não atribua id a ele
+    if (!produto.id) produto.id = sequence.id 
     produtos[produto.id] = produto
     return produto
 }
@@ -28,4 +28,4 @@ function deleteProduto(id) {
 
 }
 
-module.exports = { salvarProduto, getProduto, getProdutos, deleteProduto } // lista de funções expostadas
+module.exports = { salvarProduto, getProduto, getProdutos, deleteProduto } 
