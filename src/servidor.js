@@ -8,7 +8,7 @@ const bancoDeDados = require('./bancoDeDados')
 app.use(bodyParser.urlencoded({ extended: true }))
 
 app.get('/produtos', (req, res, next) => { 
-    res.send(bancoDeDados.getProdutos()) //Converte um objeto em JSON
+    res.send(bancoDeDados.getProdutos())
 })
 
 app.get('/produtos/:id', (req, res, next) => {
